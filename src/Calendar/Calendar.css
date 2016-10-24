@@ -1,0 +1,118 @@
+$pale_grey: #eee;
+$pale_grey_darker: #ddd;
+$main_blue: #24acff;
+
+.rc-calendar{
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  color: #4a5b6b;
+  user-select: none; /* prevent selection on double click */
+
+  .calendarHeader {
+    display: flex;
+    align-items: center;
+
+    background: $pale_grey;
+    padding: 12px 0 4px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 auto;
+
+    .date{
+      margin: 0 auto;
+      font-size: 14px;
+      color: #4a5b6b;
+      font-weight: 600;
+    }
+
+    .nav-btn{
+      padding: 12px;
+      cursor: pointer;
+      line-height: 1;
+
+      .arrow-icon{
+        vertical-align: bottom;
+        width: 10px;
+        fill: #4a5b6b;
+      }
+    }
+  }
+  .cal-row-fluid {
+    .cal-span{
+      display: block;
+      float: left;
+      margin-left: 0;
+      width: 14.285714285714285%;
+    }
+    &:after {
+      clear: both;
+    }
+    &:before,
+    &:after {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+  }
+  .cal-row-head{
+    padding: 8px 4px;
+    background: $pale_grey;
+    text-align: center;
+
+    .cal-span {
+      font-size: 12px;
+      line-height: 1.7;
+      color: rgba(74, 91, 107, 0.5);
+    }
+  }
+
+  .cal-month-box {
+    padding: 8px 4px 16px;
+  }
+
+  .cal-month-day {
+    height: 40px;
+    margin: 1px 0.5px; /* split cells apart */
+    text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+
+    &.notAvailable, &.cal-day-outmonth{
+      cursor: default;
+      pointer-events: none;
+      color: $pale_grey_darker;
+    }
+
+    &.highlighted {
+    	background-color: rgba(249, 207, 84, 0.2);
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: rgba(35, 172, 255, 0.2);
+    }
+
+    &.selected{
+      background: $main_blue;
+      color: #fff;
+    }
+
+    &.cal-day-today::after {
+      content: 'Today';
+      font-size: 12px;
+      transform: scale(0.833);
+      margin: -4px 0 0;
+    }
+  }
+  .cal-date{
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}

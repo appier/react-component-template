@@ -1,0 +1,100 @@
+.rc-multi-selector{
+  position: relative;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  .input-wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 4px 16px 4px 4px;
+
+    .multi-value-wrapper{
+      display: flex;
+      align-items: center;
+      color: #333;
+      font-size: 0.9em;
+      line-height: 1.4;
+      .place-holder{
+        margin: 0 -2px;
+        border: 1px solid transparent;
+        padding: 2px 0;
+      }
+      .value-wrap{
+        display: flex;
+        margin-left: 5px;
+        border: 1px solid #ddd;
+        background-color: #eee;
+        cursor: pointer;
+      }
+      .value{
+        padding: 2px 0 2px 5px;
+      }
+      .remove-btn{
+        padding: 2px 5px;
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px;
+        border-right: 1px solid #ddd;
+      }
+    }
+    input{
+      width: 8px;
+      margin: 0 0 0 5px;
+      padding: 0;
+      border: 0;
+      flex: 1;
+      font-size: 14px;
+      background: transparent;
+      box-shadow: none;
+      outline: none;
+      -webkit-appearance: none;
+    }
+
+    .arrow-btn{
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 20px;
+      padding: 0 4px;
+    }
+    .arrow {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      margin: auto;
+      border-color: #999 transparent transparent;
+      border-style: solid;
+      border-width: 5px 5px 2.5px;
+      pointer-events: none;
+    }
+  }
+
+  .dropdown-wrap{
+    position: absolute;
+    margin: 1px -1px 0 -1px;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+    .menu{
+      max-height: 400px;
+      overflow-y: scroll;
+    }
+
+    .option{
+      padding: 5px;
+      color: #333;
+      cursor: pointer;
+      &.highlight{
+        background: #f0faff;
+      }
+    }
+
+  }
+
+}

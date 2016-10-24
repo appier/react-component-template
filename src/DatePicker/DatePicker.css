@@ -1,0 +1,54 @@
+.rc-datepick{
+  box-sizing: border-box;
+  position: relative;
+  > * {
+    box-sizing: border-box;
+  }
+
+  input{
+    font-family: inherit;
+    display: block;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+
+    border-radius: 5px;
+  	background-color: rgba(29, 53, 78, 0.6);
+  	border: solid 1px rgba(255, 255, 255, 0.3);
+
+    padding: 10px 52px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .calendar-wrap{
+    position: absolute;
+    opacity: 0;
+    width: 300px;
+    top: 100%;
+    left: 0px;
+    transition: opacity 0.1s, transform 0.1s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0.8);
+    z-index: 10;
+    pointer-events: none;
+    &.show{
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: all;
+    }
+  }
+
+  .calendar-icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    margin-top: -9px;
+    left: 16px;
+    pointer-events: none;
+  }
+}
