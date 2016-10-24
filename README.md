@@ -55,4 +55,4 @@ npm run deploy
 
 ## License
 
-MIT Licensed. Copyright (c) Appier 2016.
+MIT Licensed. Copyright (c) Appier Inc.
