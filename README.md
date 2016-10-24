@@ -5,7 +5,7 @@ Please notice, this is not a component library for you to use directly.
 Instead, we provide the minimal implementation for some common components.
 You can simply copy and paste code to your project, and customize it as you need.
 
-DEMO Link: https://appier.github.io/react-component-template/build_storybook/
+**[DEMO](https://appier.github.io/react-component-template/build_storybook/)**
 
 ## Why this project?
 
