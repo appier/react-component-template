@@ -62,7 +62,10 @@ const MultiSelector = React.createClass({
 
   changeHandler(value){
     //avoid handleClickInputWrap break;
-    setTimeout(()=>this.props.onChange(value), 0);
+    setTimeout(()=>{
+      this.props.onChange(value);
+      this.setState({kw: ''});
+    }, 0);
   },
 
   removeItem(key){
@@ -75,12 +78,6 @@ const MultiSelector = React.createClass({
     if(this.focus && e.target === this.arrowBtn){
       this.closeMenu();
       this.focus = false;
-      return;
-    }
-
-    // FIXME: this is ugly hack
-    if(!this.focus && e.target !== this.arrowBtn && e.target !== this.input){
-      //user are try to delete item
       return;
     }
 
@@ -156,13 +153,14 @@ const MultiSelector = React.createClass({
           <SelectedItem
             selectedOptions={selectedOptions}
             removeItem={this.removeItem}
-          />
-          <input
-            ref={(el)=>this.input = el}
-            type="text"
-            value={kw}
-            onChange={this.updateKw}
-          />
+          >
+            <input
+              ref={(el)=>this.input = el}
+              type="text"
+              value={kw}
+              onChange={this.updateKw}
+            />
+          </SelectedItem>
           <div className="arrow-btn" ref={(el)=>this.arrowBtn = el}>
             <div className="arrow"></div>
           </div>

@@ -15,6 +15,7 @@
       color: #333;
       font-size: 0.9em;
       line-height: 1.4;
+      flex-wrap: wrap;
       .place-holder{
         margin: 0 -2px;
         border: 1px solid transparent;
@@ -23,6 +24,7 @@
       .value-wrap{
         display: flex;
         margin-left: 5px;
+        margin-bottom: 5px;
         border: 1px solid #ddd;
         background-color: #eee;
         cursor: pointer;
@@ -38,12 +40,14 @@
       }
     }
     input{
+      min-width: 100px;
       width: 8px;
-      margin: 0 0 0 5px;
+      margin: 0 0 5px 5px;
       padding: 0;
       border: 0;
       flex: 1;
       font-size: 14px;
+      line-height: 20px;
       background: transparent;
       box-shadow: none;
       outline: none;

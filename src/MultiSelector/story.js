@@ -68,7 +68,7 @@ stories.add('Long List', () => {
   for(let i = 0; i < 100; i++){
     options[i] = {
       key: i,
-      label: i,
+      label: `Item ${i}`,
     }
   }
   const Host = React.createClass({
@@ -86,6 +86,7 @@ stories.add('Long List', () => {
     render() {
       return (
         <MultiSelector
+          style={{width: '400px'}}
           options={options}
           value={this.state.value}
           onChange={this.onChange}

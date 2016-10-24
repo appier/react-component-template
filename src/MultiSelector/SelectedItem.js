@@ -29,6 +29,7 @@ const SelectedItem = React.createClass({
             )
           })
         }
+        {this.props.children}
       </div>
     );
   }
