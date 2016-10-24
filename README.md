@@ -1,11 +1,11 @@
 # react-component-template
 
-This is a reference implementation for some widely used React components.
+Reference implementations for widely used React widget.
 Please notice, this is not a component library for you to use directly.
 Instead, we provide the minimal implementation for some common components.
 You can simply copy and paste code to your project, and customize it as you need.
 
-DEMO Link: TBD
+DEMO Link: https://appier.github.io/react-component-template/build_storybook/
 
 ## Why this project?
 
@@ -23,11 +23,11 @@ Thus, we open those components with lovely storybook UI for other developers as 
 
 Currently we have the following reference implementations.
 
-* Calendar
-* DatePicker
-* MultiSelector
-* D3 Chart Integration
-* Three.js Intergration
+* [Calendar](https://github.com/appier/react-component-template/tree/master/src/Calendar)
+* [DatePicker](https://github.com/appier/react-component-template/tree/master/src/DatePicker)
+* [MultiSelector](https://github.com/appier/react-component-template/tree/master/src/MultiSelector)
+* [D3 Chart Integration](https://github.com/appier/react-component-template/tree/master/src/D3)
+* [Three.js Intergration](https://github.com/appier/react-component-template/tree/master/src/ThreeRender)
 
 
 ## Development
