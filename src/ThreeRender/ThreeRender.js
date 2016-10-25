@@ -23,7 +23,7 @@ const ThreeRender = React.createClass({
 
   particles: [],
   count: 0,
-  unmount: false,
+  unmounted: false,
 
   componentDidMount() {
     this.windowHalfX = window.innerWidth / 2;
@@ -33,7 +33,7 @@ const ThreeRender = React.createClass({
   },
 
   componentWillUnmount() {
-    this.unmount = true;
+    this.unmounted = true;
     window.removeEventListener('resize', this.onWindowResize);
   },
 
@@ -74,7 +74,7 @@ const ThreeRender = React.createClass({
   },
 
   animate() {
-    if(!this.unmount){
+    if(!this.unmounted){
       requestAnimationFrame(this.animate);
       this.renderCanvans();
     }
