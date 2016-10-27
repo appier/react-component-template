@@ -1,0 +1,74 @@
+.rc-form{
+  padding: 16px;
+  background-color: #fff;
+
+  .vertical-input-group{
+    display: flex;
+    margin-bottom: 8px;
+    .label{
+      position: relative;
+      margin: 0;
+      color: #5d5d5d;
+      font-weight: 400;
+      line-height: 2em;
+    }
+    .input-wrap{
+      display: flex;
+      .input, .select-btn{
+        flex: 1;
+      }
+    }
+    .input{
+      padding: 16px 24px;
+      border: 1px solid #d3d3d3;
+      &:disabled{
+        border: 1px solid #ccc;
+        background-color: #eee;
+        color: #666;
+      }
+    }
+    .text{
+      flex: 1;
+      padding: 4px 12px;
+      line-height: 24px;
+      font-size: 16px;
+      color: #333;
+    }
+  }
+
+  .vertical-input-group{
+    flex-direction: column;
+    .label{
+      text-align: left;
+      padding-bottom: 4px;
+    }
+    .input{
+      padding: 8px 12px;
+    }
+    .validate-msg{
+      flex: 1;
+    }
+  }
+
+  .validate-msg{
+    color: #333;
+  }
+
+  .submit-btn{
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #24acff;
+    border: 1px solid #1f9fed;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+      background-color: #1f9fed;
+    }
+    &.disabled{
+      opacity: 0.4;
+    }
+  }
+}

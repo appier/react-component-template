@@ -8,6 +8,8 @@ function loadStories() {
   require('../src/MultiSelector/story.js');
   require('../src/D3/story.js');
   require('../src/ThreeRender/story.js');
+
+  require('../src/SelfValidateForm/story.js');
 }
 
 setAddon(infoAddon);

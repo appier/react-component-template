@@ -28,6 +28,7 @@ Currently we have the following reference implementations.
 * [MultiSelector](https://github.com/appier/react-component-template/tree/master/src/MultiSelector)
 * [D3 Chart Integration](https://github.com/appier/react-component-template/tree/master/src/D3)
 * [Three.js Intergration](https://github.com/appier/react-component-template/tree/master/src/ThreeRender)
+* [Component-based Form Validation](https://github.com/appier/react-component-template/tree/master/src/SelfValidateForm)
 
 
 ## Development
